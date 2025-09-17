@@ -1,0 +1,15 @@
+@xsto {
+    version: "1.0";
+    background_info {
+        workbook_name = "科目余额表";
+        ledger_sheet = "序时账";
+        account_columns = ["A", "B"];
+        formatting_issue = "双击科目编码单元格时自动添加了两位小数";
+        goal = "保持科目编码为固定文本格式并支持快速跳转至序时账对应科目分录";
+    }
+    solution_overview {
+        formatting_fix = "在激活或编辑时强制A、B列使用文本格式，避免Excel自动转换";
+        navigation = "在A或B列双击时根据科目编码或名称查找序时账，找到后跳转到对应分录";
+        user_feedback = "未找到匹配分录时给出提示";
+    }
+}
